@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="462.0" prefWidth="449.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="databasegui.DepartmentController">
+  <tabs>
+    <Tab text="Data">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="416.0" prefWidth="469.0" style="-fx-background-color: #FFFFFF;">
+               <children>
+                  <Button fx:id="inBtn" layoutX="23.0" layoutY="85.0" mnemonicParsing="false" onAction="#InsertDep" prefHeight="25.0" prefWidth="72.0" text="Insert" textFill="#b91212" />
+                  <Button fx:id="upBTn" layoutX="22.0" layoutY="144.0" mnemonicParsing="false" onAction="#UpdateDep" prefHeight="25.0" prefWidth="74.0" text="Update" textFill="#a11111" />
+                  <Button fx:id="delBtn" layoutX="24.0" layoutY="210.0" mnemonicParsing="false" onAction="#DeleteDep" prefHeight="25.0" prefWidth="73.0" text="Delete" textFill="#a11212" />
+                  <Button fx:id="refreshBtn" layoutX="30.0" layoutY="248.0" mnemonicParsing="false" onAction="#refresh" prefHeight="25.0" prefWidth="334.0" text="Refresh" textFill="#b91212" />
+                  <Label layoutX="129.0" layoutY="20.0" text="Department's Data" textFill="#ae1212">
+                     <font>
+                        <Font name="System Bold Italic" size="23.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="Intxt" layoutX="173.0" layoutY="85.0" prefHeight="25.0" prefWidth="89.0" text="name" />
+                  <TextField fx:id="idTXT" layoutX="278.0" layoutY="85.0" prefHeight="25.0" prefWidth="86.0" text="Id" />
+                  <TextField fx:id="delNtxt" layoutX="173.0" layoutY="210.0" prefHeight="25.0" prefWidth="89.0" text="name" />
+                  <TextField fx:id="upNtxt" layoutX="173.0" layoutY="144.0" prefHeight="25.0" prefWidth="89.0" text="name" />
+                  <TextField fx:id="upIDtxt" layoutX="278.0" layoutY="144.0" prefHeight="25.0" prefWidth="86.0" text="Id" />
+                  <TextField fx:id="delIDtxt" layoutX="284.0" layoutY="210.0" prefHeight="25.0" prefWidth="86.0" text="Id" />
+                  <ImageView fitHeight="153.0" fitWidth="330.0" layoutX="53.0" layoutY="291.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../pictures/bdep.png" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>

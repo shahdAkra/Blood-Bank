@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="560.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="employee.EmployeeController">
+  <tabs>
+    <Tab text="Data">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="367.0" prefWidth="568.0" style="-fx-background-color: #708090;">
+               <children>
+                  <Label layoutX="207.0" layoutY="20.0" prefHeight="42.0" prefWidth="165.0" text=" Employees " textFill="#b91212">
+                     <font>
+                        <Font name="System Bold Italic" size="27.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="insertBtn" layoutX="56.0" layoutY="85.0" mnemonicParsing="false" onAction="#insertEmp" prefHeight="25.0" prefWidth="79.0" text="Insert " textFill="#b91212" />
+                  <Button fx:id="updateBtn" layoutX="210.0" layoutY="85.0" mnemonicParsing="false" onAction="#updateEmp" prefHeight="25.0" prefWidth="79.0" text="Update" textFill="#a11212" />
+                  <Button fx:id="deleteBtn" layoutX="414.0" layoutY="85.0" mnemonicParsing="false" onAction="#delete" prefHeight="25.0" prefWidth="79.0" text="Delete" textFill="#9a1111" />
+                  <Button fx:id="refreshBtn" layoutX="31.0" layoutY="332.0" mnemonicParsing="false" onAction="#refresh" prefHeight="25.0" prefWidth="498.0" text="Refresh" textFill="#c61111" />
+                  <TextField fx:id="nameIns" layoutX="31.0" layoutY="171.0" prefHeight="25.0" prefWidth="129.0" text="name" />
+                  <TextField fx:id="DOBIns" layoutX="31.0" layoutY="204.0" prefHeight="25.0" prefWidth="129.0" text="DOB" />
+                  <TextField fx:id="phoneNoIns" layoutX="31.0" layoutY="236.0" prefHeight="25.0" prefWidth="129.0" text="phoneNo." />
+                  <TextField fx:id="didIns" layoutX="31.0" layoutY="274.0" prefHeight="25.0" prefWidth="129.0" text="departmentID" />
+                  <TextField fx:id="nameUP" layoutX="196.0" layoutY="171.0" prefHeight="25.0" prefWidth="129.0" text="name" />
+                  <TextField fx:id="DOB" layoutX="196.0" layoutY="204.0" prefHeight="25.0" prefWidth="129.0" text="DOB" />
+                  <TextField fx:id="phoneNoUp" layoutX="196.0" layoutY="236.0" prefHeight="25.0" prefWidth="129.0" text="phoneNo." />
+                  <TextField fx:id="depUp" layoutX="196.0" layoutY="274.0" prefHeight="25.0" prefWidth="129.0" text="departmentID" />
+                  <TextField fx:id="IDdel" layoutX="375.0" layoutY="135.0" text="ID" />
+                  <TextField fx:id="IDUp" layoutX="195.0" layoutY="135.0" prefHeight="25.0" prefWidth="130.0" text="ID" />
+                  <TextField fx:id="IDins" layoutX="29.0" layoutY="135.0" prefHeight="25.0" prefWidth="130.0" text="ID" />
+                  <ImageView fitHeight="144.0" fitWidth="147.0" layoutX="372.0" layoutY="177.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../pictures/employees.jpg" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+      <Tab text="Report ">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #708090;">
+               <children>
+                  <TextField fx:id="depNo" layoutX="81.0" layoutY="78.0" />
+                  <Label layoutX="13.0" layoutY="82.0" prefHeight="17.0" prefWidth="49.0" text="depNo" textFill="#cd1919" />
+                  <Button fx:id="count" layoutX="257.0" layoutY="78.0" mnemonicParsing="false" onAction="#count" text="count" textFill="#c61919" />
+                  <Label layoutX="10.0" layoutY="136.0" text="Employees Number" textFill="#dd1212" />
+                  <Label fx:id="answer" layoutX="156.0" layoutY="136.0" prefHeight="17.0" prefWidth="113.0" />
+                  <ImageView fitHeight="226.0" fitWidth="445.0" layoutX="48.0" layoutY="202.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../pictures/red_blood_cells_big.png" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+        </content>
+      </Tab>
+  </tabs>
+</TabPane>
